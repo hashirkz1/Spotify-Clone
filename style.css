@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #99846a;
+}
+.nav-bar {
+  height: 50px;
+  display: flex;
+  background-color: black;
+  color: white;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+.nav-bar img {
+  height: 45px;
+  margin: 5px;
+}
+.nav-bar ul {
+  display: flex;
+}
+.nav-bar ul li {
+  list-style: none;
+  margin-left: 25px;
+  cursor: pointer;
+}
+.nav-bar ul li:hover {
+  color: #1ed760;
+}
+.song-window {
+  min-height: 35vw;
+  width: 80%;
+  margin-top: 1%;
+  margin-left: 10%;
+  background-image: url("bg.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+.bottom {
+  width: 100%;
+  background-color: black;
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1%;
+}
+#seekbar {
+  width: 70vw;
+  margin-left: 15%;
+  margin-top: 0.4%;
+  cursor: pointer;
+}
+.icons {
+  margin-left: 48%;
+  margin-top: 0.4%;
+  margin-bottom: 0.4%;
+  color: white;
+  cursor: pointer;
+}
+.songList {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding-top: 1%;
+}
+h1 {
+  color: white;
+  margin: 0 4%;
+  padding-top: 0.3%;
+  font-family: "Poppins", sans-serif;
+}
+.song1 {
+  width: 35%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 5%;
+  margin-top: 0.2%;
+  border-radius: 34px;
+}
+.cover-image {
+  height: 40px;
+  border-radius: 35px;
+  margin: 0.4% 0;
+}
+.fix {
+  width: 10%;
+}
+.song1 i {
+  cursor: pointer;
+}
+.first {
+  margin-top: 1%;
+}
+.songInfo {
+  position: absolute;
+  left: 10vw;
+}
+#gif {
+  height: 12px;
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+}
+#songname {
+  color: white;
+  font-family: "Dancing Script", cursive;
+}
+.cover-image:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+@media only screen and (max-width: 1000px) {
+  .songsList h1 {
+    font-size: 18px;
+  }
+  .cover-image {
+    height: 20px;
+    border-radius: 35px;
+    margin: 0.4% 0;
+  }
+  .song1 {
+    width: 35%;
+    height: 25px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 5%;
+    margin-top: 0.8%;
+    border-radius: 34px;
+  }
+  .fix {
+    width: 7%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .song1 {
+    width: 35%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 2%;
+    margin-top: 0.6%;
+    border-radius: 34px;
+  }
+  .fix {
+    width: 8%;
+  }
+  .cover-image {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .song1 {
+    width: 35%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 2%;
+    margin-top: 0.3%;
+    border-radius: 34px;
+  }
+  .songname {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .song1 {
+    width: 40%;
+    height: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 2%;
+    margin-top: 0.6%;
+    border-radius: 34px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .timestamp {
+    display: none;
+  }
+  .song1 {
+    width: 40%;
+    height: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 2%;
+    margin-top: 0.4%;
+    border-radius: 34px;
+  }
+}
+
+@media only screen and (max-width : 660px){
+    .song1 {
+        width: 40%;
+        height: 15px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-left: 2%;
+        margin-top: 0.8%;
+        border-radius: 34px;
+    }
+}
+@media only screen and (max-width : 570px){
+    .songname ::content{
+        content : "Hello"
+    }
+}
